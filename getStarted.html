@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - SehatSaral</title>
+    <link rel="stylesheet" href="getStartedStyles.css">
+    <script src="getStartedScript.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Get Started - SehatSaral</h1>
+    </header>
+
+    <section>
+        <h2>Create an Account</h2>
+        <p>Enter your details below to get started:</p>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p id="passwordError" style="color: #dc3545;"></p>
+
+        <p class="login-link">Already have an account? <a href="#login">Login here</a></p>
+    </section>
+
+        <section id="adminLogin">
+            <h2>Admin Login</h2>
+            <form>
+                <label for="AdminLoginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                    <a href="adminLogin.html" class="admin-login-button">
+                        <button type="button">Login</button>
+                    </a>
+                </form>
+            </section>
+</body>
+</html>
