@@ -6,6 +6,86 @@
     <title>Get Started - SehatSaral</title>
     <link rel="stylesheet" href="getStartedStyles.css">
     <script src="getStartedScript.js" defer></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #343a40;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-link {
+            margin-top: 10px;
+            display: block;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,38 +94,22 @@
     </header>
 
     <section>
-        <h2>Create an Account</h2>
-        <p>Enter your details below to get started:</p>
-        <form id="registrationForm" onsubmit="return validateForm()">
+        <h2>Login Here</h2>
+        <p>Enter your details below:</p>
+        <form id="registrationForm">
             <label for="newUsername">Username:</label>
             <input type="text" id="newUsername" name="newUsername" required>
 
             <label for="newPassword">Password:</label>
             <input type="password" id="newPassword" name="newPassword" required>
 
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-
-            <button type="submit">Sign Up</button>
+            <button type="submit">Login</button>
         </form>
 
         <p id="passwordError" style="color: #dc3545;"></p>
 
-        <p class="login-link">Already have an account? <a href="#login">Login here</a></p>
+        <p class="login-link">Don't have an account? <a href="newUser.html">Click here</a></p>
     </section>
 
-        <section id="adminLogin">
-            <h2>Admin Login</h2>
-            <form>
-                <label for="AdminLoginUsername">Username:</label>
-                <input type="text" id="loginUsername" name="loginUsername" required>
-
-                <label for="loginPassword">Password:</label>
-                <input type="password" id="loginPassword" name="loginPassword" required>
-                    <a href="adminLogin.html" class="admin-login-button">
-                        <button type="button">Login</button>
-                    </a>
-                </form>
-            </section>
 </body>
 </html>
