@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Started - SehatSaral</title>
+    <title>Login - SehatSaral</title>
     <link rel="stylesheet" href="getStartedStyles.css">
-    <script src="getStartedScript.js" defer></script>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,16 +87,15 @@
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Get Started - SehatSaral</h1>
+        <h1>SEHAT SARAL</h1>
     </header>
 
     <section>
         <h2>Login Here</h2>
         <p>Enter your details below:</p>
-        <form id="registrationForm">
-            <label for="newUsername">Username:</label>
+        <form id="loginForm" action="dashboard.html" method="POST">
+            <label for="newUsername">SSID:</label>
             <input type="text" id="newUsername" name="newUsername" required>
 
             <label for="newPassword">Password:</label>
@@ -111,5 +109,6 @@
         <p class="login-link">Don't have an account? <a href="newUser.html">Click here</a></p>
     </section>
 
+    <script src="getstarted.js"></script>
 </body>
 </html>
