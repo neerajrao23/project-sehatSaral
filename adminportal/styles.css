@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333; /* Dark background color for header and footer */
+    color: #fff; /* Text color for header and footer */
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left-section {
+    flex: 1;
+    background-color: #ffffff; /* White background for the left section */
+    padding: 20px;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #e0f7fa; /* Light blue background for the right section */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-button {
+    background-color: #4caf50; /* Green background color for buttons */
+    color: #fff; /* Text color for buttons */
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#login-content {
+    margin-top: 15px;
+}
+
+label, input {
+    width: 100%;
+
+padding: 10px;
+
+margin-bottom: 16px;
+
+box-sizing: border-box;
+
+border: 1px solid #ced4da;
+
+border-radius: 4px;
+}
+/* Add these styles to your existing CSS */
+
+.otp-button {
+    background-color: #2196F3; /* Blue background color for SEND OTP button */
+    color: #fff; /* Text color for SEND OTP button */
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px; /* Add margin at the top */
+}
+
+.otp-button:hover {
+    background-color: #0b7dda; /* Darker blue on hover */
+}
+/* Add this CSS for center-aligning the LOGIN button */
+.login-button {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+/* Existing CSS styles (unchanged) */
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
