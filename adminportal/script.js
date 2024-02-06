@@ -39,7 +39,7 @@ function sendLogin() {
     // Check if login details are correct (you can replace this with your own logic)
     if (userId === "saral@123" && password === "saral@123") {
         // Redirect to another page
-        window.location.href = "dashboard.html"; // Replace "dashboard.html" with the desired page
+        window.location.href = "adminLogin.html"; // Replace "dashboard.html" with the desired page
     } else {
         // Display an alert for incorrect login details
         alert("Incorrect login details. Please try again.");
