@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SehatSaral: Patient Treatment History</title>
@@ -13,7 +14,7 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #ffffff;
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -100,16 +101,18 @@
 </head>
 <body>
 
-    <header>
-        <h1>SehatSaral</h1>
-    </header>
 
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#features">Key Features</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#get-started">Get Started</a>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="logo3.png" alt=""></div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#features">Key Features</a></li>
+                <li> <a href="#how-it-works">How It Works</a></li>
+                <li> <a href="#benefits">Benefits</a></li>
+               <a href="getStarted.html"> <button class="btn">Login</button></a>
+            </ul>
+        </div>
     </nav>
 
     <section id="about">
@@ -144,12 +147,7 @@
         </ul>
     </section>
 
-    <section id="get-started">
-        <h2>Join SehatSaral Today</h2>
-        <p>Embrace a new era of patient-centric healthcare management. Register with SehatSaral and experience the convenience of a unified Treatment ID with complete treatment history tracking.</p>
-        <!-- Inside the #get-started section -->
-     <a href="getStarted.html"><button>GET STARTED NOW</button></a>
-    </section>
+    
 
     <footer>
         <p>Contact Us: <a href="mailto:health@sehatsaral.com">support@sehatsaral.com</a></p>
