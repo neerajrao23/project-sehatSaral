@@ -106,11 +106,10 @@
 
         <div class="ssid-input">
             <h2>Enter SSID of Patient :</h2>
-            <form>
+            <form id="ssidForm">
                 <label for="ssid">SSID:</label>
                 <input type="text" id="ssid" name="ssid" required>
-
-                <a href="userLogin.html"><button type="submit"> Submit </button></a>
+                <button type="submit">Submit</button>
             </form>
         </div>
 
@@ -126,6 +125,17 @@
         </div>
     </section>
 
+    <script>
+        document.getElementById("ssidForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var ssid = document.getElementById("ssid").value;
+            if (ssid === "123456789") {
+                window.location.href = "userLogin.html"; // Redirect to userLogin.html
+            } else {
+                alert("Invalid SSID. Please enter a valid SSID.");
+            }
+        });
+    </script>
 </body>
 </html>
-
