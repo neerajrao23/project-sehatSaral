@@ -29,5 +29,5 @@ function displayOption(option) {
 
 function sendLogin() {
    
-    alert("Login button clicked! Implement your login logic.");
+    alert("Enter correct login details");
 }
