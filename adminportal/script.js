@@ -31,3 +31,18 @@ function sendLogin() {
    
     alert("Enter correct login details");
 }
+function sendLogin() {
+    // Get user input values
+    var userId = document.getElementById("user-id-input").value;
+    var password = document.getElementById("password-input").value;
+
+    // Check if login details are correct (you can replace this with your own logic)
+    if (userId === "saral@123" && password === "saral@123") {
+        // Redirect to another page
+        window.location.href = "dashboard.html"; // Replace "dashboard.html" with the desired page
+    } else {
+        // Display an alert for incorrect login details
+        alert("Incorrect login details. Please try again.");
+    }
+}
+
